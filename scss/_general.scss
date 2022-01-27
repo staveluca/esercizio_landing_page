@@ -7,8 +7,23 @@ body {
 //link sottolineati solo all'hover del mouse
 a {
     text-decoration: none;
+    color: $white;
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+//visibilità solo mobile
+.only-mobile{
+    @media (min-width: $min-desktop){
+        display: none;
+    }
+}
+
+//visibilità solo desktop
+.only-desktop{
+    @media (max-width: $max-mobile){
+        display: none;
     }
 }
