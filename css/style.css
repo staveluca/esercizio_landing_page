@@ -5,9 +5,134 @@ body {
 
 a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .only-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .only-desktop {
+    display: none;
+  }
+}
+
+header {
+  background: url("../images/bg-header-mobile.png") no-repeat;
+  color: #FFFFFF;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  header {
+    background: url("../images/bg-header.png") no-repeat;
+  }
+}
+
+.header__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.header__navbar__container__menu {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@media (min-width: 992px) {
+  .header__navbar__container__menu > img {
+    display: none;
+  }
+}
+
+.header__navbar__container__menu > nav {
+  display: none;
+}
+
+.header__navbar__container__menu > nav > ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header__navbar__container__menu > nav > ul li {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2em;
+}
+
+@media (min-width: 992px) {
+  .header__navbar__container__menu > nav {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__navbar__container__menu {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.header__navbar__socials {
+  display: none;
+}
+
+.header__navbar__socials > ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header__navbar__socials > ul li {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2em;
+}
+
+.header__navbar__socials > ul > li {
+  margin-right: 24px;
+}
+
+@media (min-width: 992px) {
+  .header__navbar__socials {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__navbar {
+    padding: 35px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
