@@ -11,14 +11,71 @@
 
     <body>
         <header>
+            <!--navbar con logo, menu e social (desktop)-->
             <div class="header__navbar">
-                <div class="header__logo">
-                    <img src="images/logo.png" alt="immagine del logo">
+                <div class="header__navbar__container">
+                    <div class="header__navbar__container__logo">
+                        <img src="images/logo.png" alt="immagine del logo">
+                    </div>
+
+                    <!--icona menu (mobile) o voci menu (dektop)-->
+                    <div class="header__navbar__container__menu">
+                        <img src="images/hamburger-menu.png" alt="icona menu">
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Product</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
                 </div>
 
-                <div class="header__menu">
-                    <img src="images/hamburger-menu.png" alt="icona menu">
+                <!--icone social (desktop)-->
+                <div class="header__navbar__socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin icon">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+
+            <!--contenuto principale header-->
+            <div class="header__content">
+                <h1>The best product start with Figma</h1>
+                <h4 class="only-desktop">
+                    Most calendars are designed for teams. Slate is designed<br/> for freelancers
+                </h4>
+                <h4 class="only-mobile">
+                    Most calendars are<br/> designed for teams.
+                </h4>
             </div>
         </header>
     </body>
