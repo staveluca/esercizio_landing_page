@@ -1,0 +1,18 @@
+//lista non puntata
+@mixin reset-list{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+@mixin horizontal-list{
+    //inclusione della lista senza puntinui
+    @include reset-list;
+
+    //allineamento delle voci
+    li{
+        display: inline-block;
+        margin-left: -2px;
+        margin-right: 2em;
+    }
+}
