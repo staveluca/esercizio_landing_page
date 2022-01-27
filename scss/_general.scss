@@ -1,0 +1,14 @@
+//caratteristiche generali del body
+body {
+    background-color: $bg-color;
+    margin: 0px;
+}
+
+//link sottolineati solo all'hover del mouse
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
