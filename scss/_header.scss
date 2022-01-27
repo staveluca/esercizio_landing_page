@@ -1,0 +1,83 @@
+//immagine header di sfondo 
+header{
+    background: url("../images/bg-header-mobile.png") no-repeat;
+    color: $white;
+    background-size: cover;
+
+    @media (min-width: $min-desktop){
+        background: url("../images/bg-header.png") no-repeat;
+    }
+}
+
+.header{
+    &__navbar{
+        //logo, menu e social disposti orizzontalmente
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        &__container{
+            //logo e menu orizzontali (desktop larghezza max)
+            display: flex;
+            align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            
+
+            &__menu{
+                font-size: 15px;
+                line-height: 18px;
+
+                //icona menu non visibile (desktop)
+                >img{
+                    @media (min-width: $min-desktop){
+                        display: none;
+                    }
+                }
+
+                //elenco non visibile (mobile)
+                >nav{
+                    display: none;
+
+                    //lista orizzontale e messa in linea
+                    >ul{
+                        @include horizontal-list;
+                    }
+                    
+                    @media (min-width: $min-desktop){
+                        display: inline-block;
+                    }
+                }
+
+                //voci di menu spostate a sinistra del logo
+                @media (min-width: $min-desktop){
+                    order: -1;
+                }
+            }
+        }
+
+        &__socials{
+            //social non visibili (mobile)
+            display: none;
+            //lista orizzontale e messa in linea
+            >ul{
+                @include horizontal-list;
+                >li{
+                    margin-right: 24px;
+                }
+            }
+
+            @media (min-width: $min-desktop){
+                display: inline-block;
+            }
+        }
+
+        //navbar con padding (desktop)
+        @media (min-width: $min-desktop){
+            padding: 35px 0px;
+        }
+    }
+}
