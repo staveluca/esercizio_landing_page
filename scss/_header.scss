@@ -23,13 +23,24 @@ header{
             //logo e menu orizzontali (desktop larghezza max)
             display: flex;
             align-items: center;
-                justify-content: space-between;
-                width: 100%;
-            
+            justify-content: space-between;
+            width: 100%;
+
+            margin: 17px 16px;
+
+            &__logo{
+                padding: 10px;
+
+                @media (min-width: $min-desktop){
+                    padding: 39px 270px 39px 0px;
+                }
+            }
 
             &__menu{
                 font-size: 15px;
                 line-height: 18px;
+
+                padding: 23px;
 
                 //icona menu non visibile (desktop)
                 >img{
@@ -42,13 +53,13 @@ header{
                 >nav{
                     display: none;
 
+                    @media (min-width: $min-desktop){
+                        display: inline-block;
+                        padding: 53px 6px 53px 40px;
+                    }
                     //lista orizzontale e messa in linea
                     >ul{
                         @include horizontal-list;
-                    }
-                    
-                    @media (min-width: $min-desktop){
-                        display: inline-block;
                     }
                 }
 
@@ -57,6 +68,10 @@ header{
                     order: -1;
                 }
             }
+
+            @media (min-width: $min-desktop){
+            margin: 0px;
+        }
         }
 
         &__socials{
@@ -64,6 +79,7 @@ header{
             display: none;
             //lista orizzontale e messa in linea
             >ul{
+                width: 175px;
                 @include horizontal-list;
                 >li{
                     margin-right: 24px;
@@ -72,12 +88,51 @@ header{
 
             @media (min-width: $min-desktop){
                 display: inline-block;
+                padding: 57px 40px 57px;
+            }
+        }
+    }
+
+    &__content{
+        padding: 30px 20px;
+
+        //flex verticale centrato
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        //margini e padding h1 a seconda del device
+        >h1{
+            padding: 50px 13px 0px 13px;
+            margin: 0px 0px 17px 0px;
+            width: 350px;
+
+            @media (min-width: $min-desktop){
+                margin: 0px 47px 7px 47px;
+                padding: 10px;
+                width: 672px;
             }
         }
 
-        //navbar con padding (desktop)
+        //scritta a comparsa solo su mobile
+        .only-mobile{
+            margin: 7px 34px 59px 34px;
+            padding: 10px;
+        }
+
+        //scritta a comparsa solo su desktop
+        .only-desktop{
+            padding: 10px;
+            margin-bottom: 70px;
+        }
+
         @media (min-width: $min-desktop){
-            padding: 35px 0px;
+            padding: 80px 0px;
+        }
+
+        >a{
+            margin: 0px 90px 267px 90px;
         }
     }
 }
