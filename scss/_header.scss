@@ -3,6 +3,7 @@ header{
     background: url("../images/bg-header-mobile.png") no-repeat;
     color: $white;
     background-size: cover;
+    background-position: bottom center;
 
     @media (min-width: $min-desktop){
         background: url("../images/bg-header.png") no-repeat;
@@ -131,7 +132,7 @@ header{
             padding: 80px 0px;
         }
 
-        >a{
+        >button{
             margin: 0px 90px 267px 90px;
         }
     }
