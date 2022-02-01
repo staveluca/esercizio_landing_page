@@ -4,6 +4,12 @@ h1{
     font-family: $font-base-bold ;
 }
 
+h2{
+    font-size: $h2-size;
+    letter-spacing: $spacing;
+    font-family: $font-base;
+}
+
 h4{
     font-size: $h4-size;
     letter-spacing: $spacing;
