@@ -10,8 +10,20 @@ h2{
     font-family: $font-base;
 }
 
+h3{
+    font-size: $h3-size;
+    letter-spacing: 0.1px;
+    font-family: $font-base-bold;
+}
+
 h4{
     font-size: $h4-size;
+    letter-spacing: $spacing;
+    font-family: $font-base;
+}
+
+p{
+    font-size: $p-size;
     letter-spacing: $spacing;
     font-family: $font-base;
 }
