@@ -4,11 +4,37 @@
             margin-top: 80px;
             margin-bottom: 7px;
             padding: 10px;
+
+            @media (min-width: $min-desktop){
+                margin-top: 0px;
+            }
         }
 
         >h4{
-            margin-bottom: 59px;
+            margin: 0px;
             padding: 10px;
         }
+
+        >button{
+            margin: 59px 0px;
+        }
+
+        @media (min-width: $min-desktop){
+            text-align: left;
+        }
+    }
+
+    &__image{
+        >img{
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (min-width: $min-desktop){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 226px 266px;
+        gap:50px;
     }
 }
