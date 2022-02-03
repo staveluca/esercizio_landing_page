@@ -9,6 +9,11 @@
     &--bold{
         font-family: $font-base-bold;
     }
+
+    &--sub{
+        color: $black;
+        background-color: $gray;
+    }
 }
 
 button{
