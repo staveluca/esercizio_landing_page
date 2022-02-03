@@ -1,0 +1,20 @@
+.partner{
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >ul{
+            @include reset-list;
+            padding: 18px 0px;
+
+            >li{
+                border: 1px solid #D8D8D8;
+                margin: 30px 0px;
+                padding: 25px 40px;
+            }
+        }
+    }
+}
